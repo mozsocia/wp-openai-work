@@ -5,49 +5,50 @@ add_action('pmpro_after_change_membership_level', 'pmpro_after_change_membership
 
 function pmpro_after_change_membership_level_callback($level_id)
 {
-    $user_id = get_current_user_id();
-    if ($user_id != 0) {
 
-        $userdetails = get_userdata($user_id);
+    global $user_ID;
 
-        if (!empty($userdetails->roles) && is_array($userdetails->roles)) {
-            // Loop through the user's roles
-            foreach ($userdetails->roles as $role) {
-                if ($role == "pmpro_role_2") {
-                    add_user_meta($user_id, "word_count", 20000);
-                }
+    $membershipLevel_ids = [2, 6, 7, 8, 9, 10, 11, 12];
+    if ($user_ID != 0) {
 
-                if ($role == "pmpro_role_6") {
-                    add_user_meta($user_id, "word_count", 240000);
-                }
+        $userdetails = get_userdata($user_ID);
 
-                if ($role == "pmpro_role_7") {
-                    add_user_meta($user_id, "word_count", 60000);
-                }
-
-                if ($role == "pmpro_role_8") {
-                    add_user_meta($user_id, "word_count", 600000);
-                }
-
-                if ($role == "pmpro_role_9") {
-                    add_user_meta($user_id, "word_count", 100000);
-                }
-
-                if ($role == "pmpro_role_10") {
-                    add_user_meta($user_id, "word_count", 1000000);
-                }
-
-                if ($role == "pmpro_role_11") {
-                    add_user_meta($user_id, "word_count", 300000);
-                }
-                if ($role == "pmpro_role_12") {
-                    add_user_meta($user_id, "word_count", 3000000);
-                }
-
+        // Loop through the user's roles
+        foreach ($membershipLevel_ids as $Membership_id) {
+            if ($Membership_id === (int) $level_id) {
+                add_user_meta($user_ID, "word_count", 20000);
             }
+
+            if ($Membership_id === (int) $level_id) {
+                add_user_meta($user_ID, "word_count", 240000);
+            }
+
+            if ($Membership_id === (int) $level_id) {
+                add_user_meta($user_ID, "word_count", 60000);
+            }
+
+            if ($Membership_id === (int) $level_id) {
+                add_user_meta($user_ID, "word_count", 600000);
+            }
+
+            if ($Membership_id === (int) $level_id) {
+                add_user_meta($user_ID, "word_count", 100000);
+            }
+
+            if ($Membership_id === (int) $level_id) {
+                add_user_meta($user_ID, "word_count", 1000000);
+            }
+
+            if ($Membership_id === (int) $level_id) {
+                add_user_meta($user_ID, "word_count", 300000);
+            }
+            if ($Membership_id === (int) $level_id) {
+                add_user_meta($user_ID, "word_count", 3000000);
+            }
+
         }
 
-        moz_plugin_log(["pmpro user created ", $user_id]);
+        moz_plugin_log(["pmpro user created ", $user_ID]);
     }
 }
 
