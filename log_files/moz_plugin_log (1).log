@@ -1,0 +1,8 @@
+2022-12-14 06:27:22::["2",46]
+
+2022-12-14 06:31:40::["4",0]
+
+2022-12-14 06:32:06::["2",47]
+
+2022-12-14 06:42:13::["2",48,{"data":{"ID":"48","user_login":"moztestuser277","user_pass":"$P$BgZkNHonUV4cDSexwyP9Fic8ufaeEg1","user_nicename":"moztestuser277","user_email":"moztestuser277@mailinator.com","user_url":"","user_registered":"2022-12-14 06:41:29","user_activation_key":"","user_status":"0","display_name":"moztestuser277","membership_level":{"ID":"2","id":"2","subscription_id":"47","name":"Monthly $9.99","description":"","confirmation":"","expiration_number":"0","expiration_period":"","allow_signups":"1","initial_payment":9.9900000000000002131628207280300557613372802734375,"billing_amount":9.9900000000000002131628207280300557613372802734375,"cycle_number":"1","cycle_period":"Month","billing_limit":"0","trial_amount":0,"trial_limit":"0","code_id":"0","startdate":"1671000133","enddate":null,"categories":[]},"membership_levels":[{"ID":"2","id":"2","subscription_id":"47","name":"Monthly $9.99","description":"","confirmation":"","expiration_number":"0","expiration_period":"","initial_payment":9.9900000000000002131628207280300557613372802734375,"billing_amount":9.9900000000000002131628207280300557613372802734375,"cycle_number":"1","cycle_period":"Month","billing_limit":"0","trial_amount":0,"trial_limit":"0","code_id":"0","startdate":"1671000133","enddate":null}]},"ID":48,"caps":{"subscriber":true},"cap_key":"zjr_capabilities","roles":["subscriber"],"allcaps":{"read":true,"level_0":true,"subscriber":true},"filter":null}]
+
